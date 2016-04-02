@@ -1,6 +1,5 @@
-#dockerfile for nginx/php5-fpm
-FROM ubuntu:14.04
-MAINTAINER hussein.galal.ahmed.11@gmail.com
+FROM thomasredstone/base:1.0.1
+MAINTAINER thomas@redstone.me.uk
 ENV CACHED_FLAG 1
 
 # Install nginx and php-fpm
