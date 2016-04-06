@@ -1,4 +1,5 @@
-FROM thomasredstone/base:1.0.1
+FROM ubuntu:14.04
+#FROM thomasredstone/base:1.0.1
 MAINTAINER thomas@redstone.me.uk
 ENV CACHED_FLAG 1
 
