@@ -14,7 +14,7 @@ RUN usermod -u 1000 www-data
 VOLUME /var/www/app
 VOLUME /var/www/management
 
-RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/nginx.key -out /etc/nginx/nginx.crt
+RUN openssl req -x509 -nodes -subj '/CN=example.com/O=TestCertCo./C=GB' -days 365 -newkey rsa:2048 -keyout /etc/nginx/nginx.key -out /etc/nginx/nginx.crt
 
 # Adding the configuration files
 ADD conf/nginx.conf /etc/nginx/nginx.conf
