@@ -9,7 +9,7 @@ RUN apt-get install -y wget openssl
 RUN wget -qO - http://nginx.org/keys/nginx_signing.key | apt-key add - && \
 echo -e "deb http://nginx.org/packages/mainline/ubuntu/ wily nginx\ndeb-src http://nginx.org/packages/mainline/ubuntu/ wily nginx" \
 apt-get update -qq
-RUN apt-get -y -qq install nginxi
+RUN apt-get -y -qq install nginx
 RUN usermod -u 1000 www-data
 VOLUME /var/www/app
 VOLUME /var/www/management
